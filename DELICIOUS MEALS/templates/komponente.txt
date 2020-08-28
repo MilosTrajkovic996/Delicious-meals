@@ -1,0 +1,11 @@
+Bootstrap - v4
+jQuery - v3.3.1
+Smarty templates
+fontawesome - v5.0.13
+PHP v7.0
+MySQL v5.6.39
+Linux - Amazon Linux AMI 2018.03.0.20180508 x86_64 HVM 
+Apache, PHP, MySQL installed on EC2 micro instance (AWS servers),redom su instalirani
+
+
+

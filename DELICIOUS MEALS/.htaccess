@@ -1,0 +1,32 @@
+#AuthName "ALVDIGITAL"
+#AuthType Basic
+#AuthUserFile "/var/www/vhosts/alv-royalty-software.com/.htpasswd"
+#require valid-user
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+</IfModule>
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
+Header set Cache-Control "max-age=28800"
+</FilesMatch>
+<FilesMatch "\.combined\.(js|css)$"> 
+Options +Includes 
+SetOutputFilter INCLUDES 
+</FilesMatch>
+#php_value max_execution_time 0
+#php_value open_basedir  
+php_value allow_call_time_pass_reference "on"
+php_value allow_url_fopen "On"
+php_value session.save_path "/tmp"
+php_value  display_errors "On"
+php_value memory_limit 8500M
+php_value upload_max_filesize 1000M
+php_value post_max_size 1000M
+php_value auto_detect_line_endings 1
+#php_flag  log_errors Off
+php_value session.gc_maxlifetime  86400
+php_value ession.cookie_lifetime  86400
+
+

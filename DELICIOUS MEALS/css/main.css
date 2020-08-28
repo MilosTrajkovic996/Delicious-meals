@@ -1,0 +1,117 @@
+body {
+    font-family: BrandonText,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    font-style: normal;
+	background:#f7f7f7;
+}
+
+.navbar {
+    background: none repeat scroll 0 0 white;
+    border-color: none;
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.1);
+	height:108px;
+}
+
+#sign-in-btn {
+	margin-right:10px;
+}
+
+#logo-left {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    height: 106px;
+}
+
+.navbar-inner-left-functions {
+    background-image: url('../images/Logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 196px;
+    height: 99px;
+    float: left;
+}
+
+.navbar-fixed-top { 
+    left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index:9999;
+	top: 0;
+	transform: translateZ(0px);
+} 
+
+#user_setting_buttons {
+	float:right; 
+	width:50%; 
+	height:70px; 
+	display:inline-block; 
+	text-align:right;
+}
+
+#main-content {
+	margin-top:108px;
+	width:100%;
+	height:100%;
+}
+.card {
+	
+}
+.category-caption {
+	width:100%; 
+	display:block; 
+	padding-left:15px; 
+	padding-right:15px;
+	text-align:left;
+	padding-bottom:15px;
+	
+}
+.category-caption-title {
+	border-bottom: 1px solid lightgrey;
+}
+.category-caption-title h5 {
+    color: #666;
+}
+.dmeals-row-top-margin {
+	margin-top:25px;
+}
+.card-img-top {
+	width:368px;
+	height:188px;
+}
+
+.objekat-main-content {
+	
+}
+
+.star-checked{
+    color: red;
+}
+
+.selected-image-top-container {
+    height: 300px !important;
+    overflow: hidden !important;
+    position: relative;
+}
+.local-navbar{
+position: absolute;
+bottom: 0;
+left: 0;
+height: auto !important;
+}
+
+.local-name-header {
+    padding: 20px 0px;
+}
+
+.kontakt-lokala {
+    margin-bottom: 150px;
+}
+
+.galerija-lokala {
+    margin-bottom: 20px;
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"  crossorigin="anonymous">
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/main.css" >
+<title>DELICIOUS MEALS</title>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top" id="head-nav" style="position:fixed">
+	<div id="logo-left">
+	   <div id="navbar-left-functions" class="navbar-inner-left-functions"></div>
+	</div>
+	<div id="user_setting_buttons">
+	<button id="sign-in-btn" type="button" class="btn btn-outline-primary  btn-sm">Sign in</button> <button type="button" id="sign-up-btn" class="btn btn-outline-primary  btn-sm">Sign up</button>
+	</div>
+</nav>
+
+<div style="width:100%; height:150px"></div>
+{foreach from=$restorani key=k item=restoran}
+ {if $k === 0}
+ 	<div class="row text-center">
+	<div class='category-caption'>
+		<div class='category-caption-title'><h4>Restorani</h4><h5>Dine in the most popular neighborhoods</h5></div>
+	</div>
+  {else if $k % 2 === 0} 
+  	<div class="row text-center dmeals-row-top-margin">
+ {/if}
+        <div class="col-lg-6 col-md-12 mb-8">
+          <div class="card">
+            <img class="card-img-top" src="{$restoran.pocetna_slika}" alt="">
+            <div class="card-body">
+              <h4 class="card-title">{$restoran.naziv}</h4>
+              <p class="card-text">{$restoran.kratak_opis}</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+ {if $k === 2}
+ 	</div>
+ {else if $k mod 2 === 0} 
+  	</div>
+ {/if}
+ {/foreach}
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+<script src="js/main.js" ></script>
+</body>
+</html>
